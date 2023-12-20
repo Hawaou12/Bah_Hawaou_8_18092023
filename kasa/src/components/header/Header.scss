@@ -1,0 +1,19 @@
+.header {
+   // margin-top: 38px;
+    //position: absolute;
+    padding: 30px 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 501px) {
+        .logo-mobile {
+            display: none;
+        }
+    }
+    @media (max-width: 500px) {
+        .logo-desktop {
+            display: none;
+        }
+    }
+}
