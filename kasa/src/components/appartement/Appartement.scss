@@ -1,0 +1,50 @@
+.gallery {
+    padding: 45px;
+    gap: 45px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+   // margin-left: 22px;
+    //margin-right: 22px;
+
+  //@media screen and (width.<=){
+    
+ // }
+
+    .Appartement {
+        .cards {
+            //margin: 30px;
+            //width: 30%;
+            position: relative;
+            height: 340px;
+            border-radius: 10px;
+            //background-color: rgb(255, 96, 96, 1);
+            background-image: linear-gradient(to top, #853434, #ff6060);
+
+           
+        }
+
+        h2 {
+            position: absolute;
+            width: 26%;
+            /* height: 5px; */
+            margin-left: 10px;
+            bottom: 5px;
+            //margin: 0;
+
+            color: rgba(255, 255, 255, 1);
+            font-weight: 500;
+            line-height: 26px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 349px) {
+    .gallery{
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    }
+}
+

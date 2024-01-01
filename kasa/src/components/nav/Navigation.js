@@ -4,16 +4,19 @@ import "./Navigation.scss";
 
 const Navigation = () => {
     return (
-        <div className="navigation">
-            <ul>
-                <NavLink to="/" className= {(nav) => (nav . isActive ? "nav-active" : "")}>
-                    <li>accueil</li>
+        <ul className="navigation">
+            <li>
+                <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                    Accueil
                 </NavLink>
-                <NavLink to="/about"  className= {(nav) => (nav . isActive ? "nav-active" : "")}>
-                    <li>à propos</li>
+            </li>
+
+            <li>
+                <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                    A Propos
                 </NavLink>
-            </ul>
-        </div>
+            </li>
+        </ul>
     );
 };
 

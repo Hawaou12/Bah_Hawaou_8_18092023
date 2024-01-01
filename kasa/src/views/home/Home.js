@@ -1,21 +1,23 @@
 import React from "react";
-import Navigation from "../../components/nav/Navigation";
-import Card from "../../components/card/Card";
+
+import Card from "../../components/appartement/Appartement";
 import Banner from "../../components/banner/Banner";
+import "./Home.scss";
+import Appartement from "../../components/appartement/Appartement";
 const Home = () => {
     return (
         <>
-         <div>
-                <Navigation />
-                <h1>Accueil</h1>
-            </div>
-        <section className="homeContainer">
-            <Banner title = "Chez vous, et partout ailleurs"/>
-            <div className="gallery">
-                <Card title="Titre de la location" />
-            </div>
-           
-        </section>
+            <section className="homeContainer">
+                <Banner title="Chez vous, et partout ailleurs" />
+                <div className="gallery">
+                    <Appartement title="Titre de la location" />
+                    <Appartement title="Titre de la location" />
+                    <Appartement title="Titre de la location" />
+                    <Appartement title="Titre de la location" />
+                    <Appartement title="Titre de la location" />
+                    <Appartement title="Titre de la location" />
+                </div>
+            </section>
         </>
     );
 };

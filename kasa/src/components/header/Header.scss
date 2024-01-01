@@ -1,19 +1,22 @@
-.header {
+header {
    // margin-top: 38px;
     //position: absolute;
     padding: 30px 4vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+.logo{
+    width: 120px;
+}
 
-    @media (min-width: 501px) {
-        .logo-mobile {
-            display: none;
-        }
+@media only screen and (max-width: 349px) {
+    .logo{
+      
+        width: 70px;
     }
-    @media (max-width: 500px) {
-        .logo-desktop {
-            display: none;
-        }
-    }
+}
+
+
+
+
 }

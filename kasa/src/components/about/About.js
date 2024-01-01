@@ -1,11 +1,14 @@
-import React from "react";
-import Navigation from "../nav/Navigation";
+import React from 'react';
+import Navigation from"../nav/Navigation";
+import aboutIMG from "../../assets/images/aboutIMG.png";
+import "./About.scss";
 
 const About = () => {
     return (
         <div>
-            <Navigation />
-            <h1>A propos</h1>
+              <div className="about">
+            <img src={aboutIMG} alt="about" />
+        </div>
         </div>
     );
 };

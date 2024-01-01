@@ -1,12 +1,14 @@
 import React from "react";
+import IMG from "../../assets/images/IMG.png";
+import "./Banner.scss";
 
-const Banner = ({title, imageURL}) => {
-    //const title = "Chez vous, et partout ailleurs";
+const Banner = ({ title }) => {
     return (
         <>
             <section className="mainContainer">
-                <div className="opacityBg">
-                <h1>{title}</h1>
+                <div className="banner">
+                    <h1>{title}</h1>
+                    <img src={IMG} alt="banner" />
                 </div>
             </section>
         </>

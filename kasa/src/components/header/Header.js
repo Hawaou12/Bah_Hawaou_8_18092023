@@ -1,20 +1,24 @@
+import { NavLink } from "react-router-dom";
 import React from 'react';
 import "./Header.scss";
+import Navigation from "../../components/nav/Navigation";
+import Logo from "../../assets/images/Logo.png";
 
 const Header = () => {
     return (
-        <div className='header'>
+        
+            <header>
+                     
                <img
-                src="/images/Logo.png"
+                src={Logo}
                 alt="Logo Kasa"
-                className="logo-desktop"
+                className="logo"
             />
-            <img
-                src="/images/Logo-mobile.png"
-                alt="Logo Kasa"
-                className="logo-mobile"
-            />
-        </div>
+            
+                 <Navigation />
+             </header>
+    
+       
     );
 };
 

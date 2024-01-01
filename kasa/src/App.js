@@ -13,6 +13,8 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    
+                   
                 </Routes>
                 <Footer />
             </div>
@@ -21,3 +23,10 @@ const App = () => {
 };
 
 export default App;
+
+
+//<Route
+//path="/fiche-logement/:id"
+//element={<FicheLogement />}
+///>
+//<Route path="*" element={<Error />} />

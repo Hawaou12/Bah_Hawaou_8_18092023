@@ -1,0 +1,29 @@
+.banner {
+    max-width: 100vw;
+    border-radius: 25px;
+    position: relative;
+    //margin: 0 2vw;
+
+    @media  (max-width: 500px) {
+        text-align: initial;
+    }
+    h1 {
+        position: absolute;
+        //width: 80%;
+        margin: 0;
+        padding: 0;
+        font-size: 38px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        color: white;
+    }
+    img {
+        object-fit: cover;
+        height: 223px;
+        width: 100%;
+        border-radius: 25px;
+        filter: brightness(0.7);
+    }
+}
