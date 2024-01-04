@@ -1,16 +1,26 @@
-import React from "react";
-import "./Appartement.scss"
-const Appartement = ({title}) => {
+import React from 'react';
+import { NavLink } from "react-router-dom";
+import data from "../data/data.json";
+
+const Appartement = () => {
     return (
-        <div className="Appartement">
-            
-                <div className="cards">
-                    <h2>{title}</h2>
-                </div>
-               
+        <div>
+            <div className="container">
+            {data.map((apartment) => (
+                <NavLink
+                 // création de liens vers la fiche détaillée des appartements
+                    to={`/logement/${apartment.id}`}
+                    // un ID unique pour chaque appartement
+                    key={apartment.id} 
+                    //className="card"
+                >
+                    <img src={apartment.cover} alt={apartment.title} />
+                    <h3>{apartment.title}</h3>
+                </NavLink>
+            ))}
+        </div>
         </div>
     );
 };
 
 export default Appartement;
-//<a href=""> </a>

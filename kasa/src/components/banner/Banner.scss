@@ -4,15 +4,15 @@
     position: relative;
     //margin: 0 2vw;
 
-    @media  (max-width: 500px) {
-        text-align: initial;
-    }
+    
+  
     h1 {
         position: absolute;
         //width: 80%;
+        font-weight: 500;
         margin: 0;
         padding: 0;
-        font-size: 38px;
+        font-size: 48px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -27,3 +27,23 @@
         filter: brightness(0.7);
     }
 }
+
+
+@media only screen and (max-width: 500px) {
+    .banner{
+ //width: 330px;
+ font-size: 10px;
+
+ h1{
+    width: 40%;
+    left: 30%;
+    font-size: 22px;
+ }
+
+ img{
+    height: 120px;
+}
+    }
+ 
+   
+  }

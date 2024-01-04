@@ -1,7 +1,19 @@
+
+body{
+    margin: 0 auto;
+    //padding: 0;
+    position: relative;
+    font-family:  "Montserrat";
+    //font-size: 1.5rem;
+    //font-weight: 100;
+   // line-height: 1.5;
+}
+
 header {
    // margin-top: 38px;
-    //position: absolute;
-    padding: 30px 4vw;
+    //position: absolute; 4vw;
+    height: 80px;
+    padding: 30px 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,12 +21,9 @@ header {
     width: 120px;
 }
 
-@media only screen and (max-width: 349px) {
-    .logo{
-      
-        width: 70px;
-    }
-}
+//@media only screen and (max-width: 349px) {
+   // .logo{ width: 70px; }
+//}
 
 
 

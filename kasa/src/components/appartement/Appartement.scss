@@ -1,50 +1,42 @@
-.gallery {
-    padding: 45px;
-    gap: 45px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    display: grid;
-   // margin-left: 22px;
-    //margin-right: 22px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 4vw;
+    padding: 50px 4vw;
+    background: #f6f6f6;
+    border-radius: 25px;
+    height: auto;
+    //@media (max-width: 1000px) {
+       // background: none;
+      //  margin: 0;
+   // }
 
-  //@media screen and (width.<=){
-    
- // }
 
-    .Appartement {
-        .cards {
-            //margin: 30px;
-            //width: 30%;
-            position: relative;
-            height: 340px;
-            border-radius: 10px;
-            //background-color: rgb(255, 96, 96, 1);
-            background-image: linear-gradient(to top, #853434, #ff6060);
-
-           
-        }
-
-        h2 {
-            position: absolute;
-            width: 26%;
-            /* height: 5px; */
-            margin-left: 10px;
-            bottom: 5px;
-            //margin: 0;
-
-            color: rgba(255, 255, 255, 1);
-            font-weight: 500;
-            line-height: 26px;
-        }
-    }
+.card {
+    border-radius: 10px;
+    width: 21vw;
+    height: 340px;
+    position: relative;
+    margin: 2vh;
+   // @media (max-width: 1000px) {
+      //  width: 335px;
+       // height: 225px;
+   // }
 }
 
-
-@media only screen and (max-width: 349px) {
-    .gallery{
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(1, 1fr);
-    display: grid;
-    }
+.card h3 {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 1vw;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+}

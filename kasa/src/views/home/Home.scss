@@ -8,17 +8,35 @@
     border-radius: 25px;
     //height: 820px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
+
+
 }
 }
-@media only screen and (max-width: 349px) {
+
+
+
+@media only screen and (width <= 768px) {
     .homeContainer{
         padding: 1rem;
-
         .gallery{
-            background-color: white;
-        } 
+            background: none;
+        }
+       
     }
+  
+  }
+
+
+
+//@media only screen and (max-width: 349px) {
+   //.homeContainer{
+        //padding: 1rem;
+
+      //  .gallery{
+          //  background-color: white;
+     //   } 
+   // }
 
     
-}
+//}

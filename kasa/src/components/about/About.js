@@ -3,6 +3,7 @@ import Navigation from"../nav/Navigation";
 import aboutIMG from "../../assets/images/aboutIMG.png";
 import "./About.scss";
 
+
 const About = () => {
     return (
         <div>
