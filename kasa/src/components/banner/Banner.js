@@ -1,5 +1,5 @@
 import React from "react";
-import IMG from "../../assets/images/IMG.png";
+import imgDestop from "../../assets/images/imgDestop.png";
 import "./Banner.scss";
 
 const Banner = ({ title }) => {
@@ -8,7 +8,7 @@ const Banner = ({ title }) => {
             <section className="mainContainer">
                 <div className="banner">
                     <h1>{title}</h1>
-                    <img src={IMG} alt="banner" />
+                    <img src={imgDestop} alt="banner" />
                 </div>
             </section>
         </>

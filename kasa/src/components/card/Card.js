@@ -3,20 +3,24 @@ import "./Card.scss";
 import { NavLink } from "react-router-dom";
 
 
-
-const Card = ({title}) => {
+const Card = ({ title, cover, id }) => {
     return (
         <div className="Card">
-      
-                <div className="cards">
-                <NavLink to={"/apparte"}>
-                    <h2>{title}</h2>
-                    </NavLink>
-                </div>
-               
+           
+                {/* création de liens vers la fiche détaillée des appartements */}
+                <NavLink to={`/logement/${id}`}>
+              
+              <div className="cards">
+                    <img  src={cover} alt={title} className="imageCard"/>
+
+                    <figcaption className="card-figure">
+                    <h2 className="card-title">{title}</h2>
+                    </figcaption>
+                    </div>
+                </NavLink>
+           
         </div>
     );
 };
 
 export default Card;
-//<a href=""> </a>
