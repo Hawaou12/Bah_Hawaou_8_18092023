@@ -23,7 +23,8 @@ const Carroussel = ({ images }) => {
     return (
         
         <div className="carrousel-container">
-            {showControls && <img src={arrowLeft} alt="Left" className="arrowButton arrow-left" onClick={goToPrevSlide} />}
+            {showControls && 
+            <img src={arrowLeft} alt="Left" className="arrowButton arrow-left" onClick={goToPrevSlide} />}
 
             <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="slide" />
 

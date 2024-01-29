@@ -4,7 +4,7 @@
 
 .gallery{
     background-color: rgb(246, 246, 246, 1);
-    //width: 100%;
+    // width: 95%;
     border-radius: 25px;
     //height: 820px;
     margin: 2rem auto 2rem;
@@ -17,17 +17,17 @@
 
 
 
-@media only screen and (width <= 768px) {
-    .homeContainer{
-        padding: 1rem;
-        .gallery{
-            background: none;
+// @media only screen and (width <= 768px) {
+//     .homeContainer{
+//         padding: 1rem;
+//         .gallery{
+//             background: none;
             
-        }
+//         }
        
-    }
+//     }
   
-  }
+//   }
 
 
 
@@ -36,11 +36,16 @@
         padding: 1rem;
 
        .gallery{
+        padding: 40px;
+        gap: 30px;
+        /* grid-template-rows: repeat(1, 1fr); */
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
         width: 100%;
         background: none;
-        width: 100%;
+        // width: 100%;
         padding: 0;
-        margin: 0 0 7rem;
+        margin: 0 0 1rem;
        } 
    }
 

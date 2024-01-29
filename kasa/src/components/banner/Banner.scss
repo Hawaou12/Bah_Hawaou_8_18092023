@@ -26,7 +26,7 @@ align-items: center;
     img {
         position: relative;
         object-fit: cover;
-        height: 223px;
+        height: 200px;
         width: 100%;
         border-radius: 25px;
         filter: brightness(0.7);
@@ -46,41 +46,41 @@ align-items: center;
 // }
 
 
-@media only screen and (min-width: 768px) {
-.banner{
- //width: 330px;
-font-size: 10px;
+// @media only screen and (min-width: 768px) {
+// .banner{
+//  //width: 330px;
+// font-size: 10px;
 
- h1{
-    width: 40%;
-    left: 30%;
-    font-size: 28px;
- }
+//  h1{
+//     width: 40%;
+//     left: 30%;
+//     font-size: 28px;
+//  }
 
- //img{
-   // height: 120px;
-//}
-     }
+//  //img{
+//    // height: 120px;
+// //}
+//      }
  
    
-  }
+//   }
 
 
-  @media only screen and (width <= 767px) {
+  @media only screen and (max-width: 768px) {
 
     .banner{
         //width: 330px;
         //font-size: 10px;
        
         h1{
-           width: 200px;
-           left: 35%;
-          font-size: 22px;
+           width: 60%;
+           padding-left: 1.2rem;
+          font-size: 28px;
         }
        
-        img{
-           height: 120px;
-       }
+    //     img{
+    //        height: 120px;
+    //    }
            }
         
   
