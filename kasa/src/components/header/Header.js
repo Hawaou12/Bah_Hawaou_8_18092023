@@ -3,7 +3,6 @@ import "./Header.scss";
 import Navigation from "../../components/nav/Navigation";
 import Logo from "../../assets/images/Logo.png";
 
-
 const Header = () => {
     return (
         <header>

@@ -4,8 +4,6 @@ import "./Home.scss";
 import Card from "../../components/card/Card";
 import data from "../../data/data.json";
 
-
-
 const Home = () => {
     console.log(data);
     data.forEach(function (item, index, array) {

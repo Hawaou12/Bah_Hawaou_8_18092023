@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import "./NotFound.scss";
 import notFound from "../../assets/images/logo404.png";
 
-
-
 const NotFound = () => {
     return (
         <div className="notFound">

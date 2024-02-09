@@ -6,7 +6,6 @@ import NotFound from "../../components/notFound/NotFound";
 import FicheInfos from "../../components/ficheInfos/FicheInfos";
 import Collapse from "../../components/collapse/Collapse";
 
-
 const Logement = () => {
     const { id } = useParams();
     console.log(id);
@@ -19,13 +18,14 @@ const Logement = () => {
     }
 
     return (
-        <div>
+        <div className="container-logement">
             <Carroussel images={currentCard.pictures} />
             <FicheInfos apartment={currentCard} />
             <div className="collapseInfo">
-                <Collapse title="Description" content={currentCard.description} />
 
+                <Collapse title="Description" content={currentCard.description} />
                 <Collapse title="Équipements" content={currentCard.equipments} />
+                
             </div>
         </div>
     );

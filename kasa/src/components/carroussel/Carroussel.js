@@ -1,10 +1,7 @@
-
 import React, { useState } from "react";
 import "./Carroussel.scss";
 import arrowLeft from "../../assets/images/arrowLeft.png";
 import arrowRight from "../../assets/images/arrowRight.png";
-
-
 
 const Carroussel = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,10 +18,8 @@ const Carroussel = ({ images }) => {
     const showControls = images.length > 1;
 
     return (
-        
         <div className="carrousel-container">
-            {showControls && 
-            <img src={arrowLeft} alt="Left" className="arrowButton arrow-left" onClick={goToPrevSlide} />}
+            {showControls && <img src={arrowLeft} alt="Left" className="arrowButton arrow-left" onClick={goToPrevSlide} />}
 
             <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="slide" />
 
@@ -36,7 +31,6 @@ const Carroussel = ({ images }) => {
                 </div>
             )}
         </div>
-
     );
 };
 

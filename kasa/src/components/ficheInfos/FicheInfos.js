@@ -13,19 +13,11 @@ const FicheInfos = ({ apartment }) => {
         const stars = [];
 
         for (let i = 1; i <= fullStars; i++) {
-            stars.push(
-            <FontAwesomeIcon 
-            key={i} 
-            icon={faSolidStar} 
-            className="star-active" />);
+            stars.push(<FontAwesomeIcon key={i} icon={faSolidStar} className="star-active" />);
         }
 
         for (let i = 1; i <= remainingStars; i++) {
-            stars.push(
-            <FontAwesomeIcon
-             key={fullStars + i} 
-             icon={faSolidStar} 
-             className="star-inactive" />);
+            stars.push(<FontAwesomeIcon key={fullStars + i} icon={faSolidStar} className="star-inactive" />);
         }
 
         return stars;

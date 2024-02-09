@@ -7,7 +7,6 @@ import Footer from "./components/footer/Footer";
 import NotFound from "./components/notFound/NotFound";
 import Logement from "./views/logement/Logement";
 
-
 const App = () => {
     return (
         <BrowserRouter>

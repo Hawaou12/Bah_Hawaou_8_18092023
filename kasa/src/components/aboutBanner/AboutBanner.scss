@@ -1,24 +1,23 @@
-
-.about{
-    width: 95%; 
+.about {
+    width: 95%;
     justify-content: center;
     display: flex;
     align-items: center;
     margin: 20px auto;
 
-    img{
+    img {
         object-fit: cover;
-        height: 200px;
+        height: 180px;
         width: 100%;
         border-radius: 25px;
         filter: brightness(75%);
         position: relative;
     }
 }
- 
+
 @media (max-width: 768px) {
     .banner {
-      justify-content: start !important;
-      width: 98% !important;
+        justify-content: start;
+        width: 98%;
     }
-  }
+}
