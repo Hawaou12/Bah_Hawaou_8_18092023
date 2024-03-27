@@ -6,7 +6,7 @@ import notFound from "../../assets/images/logo404.png";
 const NotFound = () => {
     return (
         <div className="notFound">
-            <img className="notFoundImg" src={notFound} alt="logo 404" />
+            <span className="notFoundImg">404</span>
 
             <p className="pageError">Oups! La page que vous demandez n'existe pas.</p>
             <Link to="/">Retourner sur la page d'accueil</Link>
